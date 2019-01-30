@@ -1,7 +1,7 @@
 {
-  "name": "live2d-widget-model-hijiki",
+  "name": "live2d-widget-model-koharu",
   "version": "1.0.5",
-  "description": "hijiki live2d model for live2d-widget.js",
+  "description": "koharu live2d model for live2d-widget.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
