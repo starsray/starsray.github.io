@@ -4,13 +4,19 @@
   
     
     <entry>
-      <title></title>
+      <title>DB2常用命令</title>
       <link href="/2019/01/30/DB2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
       <url>/2019/01/30/DB2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
       
         <content type="html"><![CDATA[<p>查看命令选项<br>list command options<br>信息帮助<br>SQL statement<br>[例子：<br>(statement =30081)<br>SQL30081 ]</p><p>启动<br>启动当前的DB2数据库管理实例<br>db2start<br>停止当前的数据库管理实例。<br>db2stop</p><p>列出当前实例：<br>get instance</p><p>库<br>系统数据库目录<br>list database directory<br>查看本地数据库目录<br>db2 list database directory on &lt;盘符&gt;<br>建立数据库<br>CREATE DATABASE 库名（不设定参数）<br>CREATE DATABASE 库名 ON 盘符（只识别盘符） ALIAS 别名 USING CODESET GBK TERRITORY CN COLLATE USING SYSTEM DFT_EXTENT_SZ 32<br>查看数据库配置<br>get db cfg for 库名<br>删除数据库<br>drop database 库名<br>连接数据库<br>connect to 库名（不设定参数）<br>connect to 库名 user 用户名 using 密码<br>中断数据库连接<br>disconnect 库名<br>重新连接<br>connect reset<br>显示当前活动数据库<br>list active databases<br>显示用户数据库的存取权限<br>GET AUTHORIZATIONS<br>表空间<br>list tablespaces<br>表空间容器<br>LIST TABLESPACE CONTAINERS FOR  1（整数）<br>列出所有的系统表<br>list tables for system<br>显示当前用户所有表<br>list tables</p><p>表<br>导入表结构<br>db2 -tf sql文件<br>import from c:user.ixf of ixf [Create/Insert into / update] tablename<br>导出用户表<br>export to c:user.ixf of ixf select <em> from user<br>查看库中是否存在<br>select </em> from syscat.tables where tabname = ‘表名’<br>重命名表名<br>rename table 旧表名 to 新表名<br>创建表<br>ceate table tb1(id integer not null,name char(10))<br>设置主键<br>alter table 表名 add primary key (字段)<br>查看表的结构<br>describe table</p><p>其他<br>修改db2字符集：<br>db2set db2codepage 1386<br>查看本地节点目录<br>list node directory<br>执行脚本文件<br>db2 -tvf<br>查看当前连接到数据库的应用<br>db2 list application [show detail]<br>以管理员权限运行xxx\IBM\SQLLIB\BIN\DB2CW.BAT<br>db2 uncatalog database 数据库别名</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> DB2 </tag>
+            
+        </tags>
       
     </entry>
     
