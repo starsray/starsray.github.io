@@ -1782,7 +1782,6 @@ pre .javascript .function {
   transition: transform 1s ease-out;
 }
 img:hover {
-  cursor: pointer;
 /* 鼠标经过停止头像旋转 
   -webkit-animation-play-state:paused;
   animation-play-state:paused;*/
@@ -1943,7 +1942,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fa18cf;
+  background: #a493d1;
 }
 .links-of-blogroll {
   font-size: 13px;
