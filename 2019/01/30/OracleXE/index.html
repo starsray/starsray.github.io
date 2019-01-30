@@ -87,23 +87,23 @@
 <meta property="og:site_name" content="似水流年">
 <meta property="og:description" content="​        Oracle Database 11g 快捷版 (Oracle Database XE) 是一款基于 Oracle Database 11g 第 2 版代码库的小型入门级数据库，它具备以下优点：免费开发、部署分发；下载速度快；并且管理简单，Oracle Database XE 是一款优秀的入门级数据库，可供以下用户使用: ​    致力于 PHP、Java、.NET、XML 和开">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="h:/Blog/source/images/Oracle/QQ截图20190130135903.png">
-<meta property="og:image" content="h:/Blog/source/images/Oracle/QQ截图20190130135933.png">
-<meta property="og:image" content="h:/Blog/source/images/Oracle/QQ截图20190130140012.png">
-<meta property="og:image" content="h:/Blog/source/images/Oracle/port.png">
-<meta property="og:image" content="h:/Blog/source/images/Oracle/port1521.png">
-<meta property="og:image" content="h:/Blog/source/images/Oracle/pwd.png">
-<meta property="og:image" content="h:/Blog/source/images/Oracle/yes.png">
-<meta property="og:image" content="h:/Blog/source/images/Oracle/QQ截图20190130140029.png">
-<meta property="og:image" content="h:/Blog/source/images/Oracle/QQ截图20190130140053.png">
-<meta property="og:image" content="h:/Blog/source/images/Oracle/QQ截图20190130140107.png">
-<meta property="og:image" content="h:/Blog/source/images/Oracle/QQ截图20190130140116.png">
-<meta property="og:image" content="h:/Blog/source/images/Oracle/QQ截图20190130140126.png">
-<meta property="og:updated_time" content="2019-01-30T06:27:02.210Z">
+<meta property="og:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/QQ截图20190130135903.png">
+<meta property="og:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/QQ截图20190130135933.png">
+<meta property="og:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/QQ截图20190130140012.png">
+<meta property="og:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/port.png">
+<meta property="og:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/port1521.png">
+<meta property="og:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/pwd.png">
+<meta property="og:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/yes.png">
+<meta property="og:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/QQ截图20190130140029.png">
+<meta property="og:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/QQ截图20190130140053.png">
+<meta property="og:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/QQ截图20190130140107.png">
+<meta property="og:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/QQ截图20190130140116.png">
+<meta property="og:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/QQ截图20190130140126.png">
+<meta property="og:updated_time" content="2019-01-30T06:32:51.364Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS 7 Oracle XE版本静默安装教程">
 <meta name="twitter:description" content="​        Oracle Database 11g 快捷版 (Oracle Database XE) 是一款基于 Oracle Database 11g 第 2 版代码库的小型入门级数据库，它具备以下优点：免费开发、部署分发；下载速度快；并且管理简单，Oracle Database XE 是一款优秀的入门级数据库，可供以下用户使用: ​    致力于 PHP、Java、.NET、XML 和开">
-<meta name="twitter:image" content="h:/Blog/source/images/Oracle/QQ截图20190130135903.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/01/30/OracleXE/images/Oracle/QQ截图20190130135903.png">
 
 
 
@@ -438,49 +438,49 @@
 <p>执行 <code>cd /usr/local/src</code>命令跳转到 /src目录下 如果不知道当前所在目录是什么可以使用<code>pwd</code>命令打印自己所在目录</p>
 <p>执行<code>ls</code> 展示当前目录所包含的子目录/文件ll列表形式 ls平铺的形式</p>
 <p>执行<code>unzip oracle-xe-11.2.0-1.0.x86_64.rpm.zip</code>命令解压安装包，</p>
-<p><img src="H:\Blog\source\images\Oracle\QQ截图20190130135903.png" alt=""></p>
+<p><img src="images/Oracle/QQ截图20190130135903.png" alt=""></p>
 <p>依次执行以下命令分配安装空间，没有此阶段会安装失败</p>
 </li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">su - root</span><br><span class="line">dd if=/dev/zero of=/swapfile bs=1024 count=1048576</span><br><span class="line">mkswap /swapfile</span><br><span class="line">swapon /swapfile</span><br><span class="line">cp /etc/fstab /etc/fstab.backup_$(date +%N)</span><br><span class="line">echo &apos;/swapfile swap swap defaults 0 0&apos; /etc/fstab</span><br><span class="line">chown root:root /swapfile</span><br><span class="line">chmod 0600 /swapfile</span><br><span class="line">swapon -a</span><br><span class="line">swapon -s</span><br></pre></td></tr></table></figure>
 <p>执行命令如图所示：</p>
-<p><img src="H:\Blog\source\images\Oracle\QQ截图20190130135933.png" alt=""></p>
+<p><img src="images/Oracle/QQ截图20190130135933.png" alt=""></p>
 <p>三、开始安装</p>
 <p>执行<code>cd /usr/local/src</code> 然后执行 <code>ls</code>可以看到解压后的文件目录<code>Disk1</code></p>
 <p>执行<code>rpm -ivh oracle-xe-11.2.0-1.0.x86_64.rpm</code>命令开始进入安装阶段</p>
-<p><img src="H:\Blog\source\images\Oracle\QQ截图20190130140012.png" alt=""></p>
+<p><img src="images/Oracle/QQ截图20190130140012.png" alt=""></p>
 <p>此处<em><code>You must run &#39;/etc/init.d/oracle-xe configure&#39; as the root user toconfigure the database.</code></em></p>
 <p>表示需要我们执行<code>/etc/init.d/oracle-xe</code>目录下的oracleXE 配置文件configur</p>
 <p>注：etc是Linux系统下存放配置文件的目录，包括系统配置文件，相关软件的配置信息以及环境变量</p>
 <p>开始执行配置文件，默认HTTP协议端口8080，点击回车</p>
-<p><img src="H:\Blog\source\images\Oracle\port.png" alt=""></p>
+<p><img src="images/Oracle/port.png" alt=""></p>
 <p>Oracle默认连接端口1521，点击回车</p>
-<p><img src="H:\Blog\source\images\Oracle\port1521.png" alt=""></p>
+<p><img src="images/Oracle/port1521.png" alt=""></p>
 <p>此处需要输入oracle用户的登录密码，且不能为空</p>
-<p><img src="H:\Blog\source\images\Oracle\pwd.png" alt=""></p>
+<p><img src="images/Oracle/pwd.png" alt=""></p>
 <p>是否开始安装oracle，点击y开始</p>
-<p><img src="H:\Blog\source\images\Oracle\yes.png" alt=""></p>
+<p><img src="images/Oracle/yes.png" alt=""></p>
 <p>开始安装，配置oracle网络监听器，配置oracle数据库文件，开始oracle数据库的安装，安装完成，静静等待即可。</p>
 <p>安装完成，如图所示：</p>
-<p><img src="H:\Blog\source\images\Oracle\QQ截图20190130140029.png" alt=""></p>
+<p><img src="images/Oracle/QQ截图20190130140029.png" alt=""></p>
 <p>接下来开始我们熟悉的配置环境变量</p>
 <p>执行命令 <code>vim /etc/profile</code>etc目录存放所有系统相关的配置文件</p>
 <p>将下面这段代码复制到profile里面</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"># Oracle Settings</span><br><span class="line">TMP=/tmp; export TMP</span><br><span class="line">TMPDIR=$TMP; export TMPDIR</span><br><span class="line">ORACLE_BASE=/u01/app/oracle; export ORACLE_BASE</span><br><span class="line">ORACLE_HOME=$ORACLE_BASE/product/11.2.0/xe; export ORACLE_HOME</span><br><span class="line">ORACLE_SID=XE; export ORACLE_SID</span><br><span class="line">ORACLE_TERM=xterm; export ORACLE_TERM</span><br><span class="line">PATH=/usr/sbin:$PATH; export PATH</span><br><span class="line">PATH=$ORACLE_HOME/bin:$PATH; export PATH</span><br><span class="line">TNS_ADMIN=$ORACLE_HOME/network/admin</span><br><span class="line">LD_LIBRARY_PATH=$ORACLE_HOME/lib:/lib:/usr/lib; export LD_LIBRARY_PATH</span><br><span class="line">CLASSPATH=$ORACLE_HOME/jlib:$ORACLE_HOME/rdbms/jlib; export CLASSPATH</span><br><span class="line">if [ $USER = &quot;oracle&quot; ]; then</span><br><span class="line">  if [ $SHELL = &quot;/bin/ksh&quot; ]; then</span><br><span class="line">    ulimit -p 16384</span><br><span class="line">    ulimit -n 65536</span><br><span class="line">  else</span><br><span class="line">    ulimit -u 16384 -n 65536</span><br><span class="line">  fi</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
 <p>可以参考放到下面位置</p>
-<p><img src="H:\Blog\source\images\Oracle\QQ截图20190130140053.png" alt=""></p>
+<p><img src="images/Oracle/QQ截图20190130140053.png" alt=""></p>
 <p>配置环境变量之后执行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
 <p>命令使配置生效</p>
 <p>执行<code>echo $ORACLE_BASE</code>响应配置是否有效</p>
-<p><img src="H:\Blog\source\images\Oracle\QQ截图20190130140107.png" alt=""></p>
+<p><img src="images/Oracle/QQ截图20190130140107.png" alt=""></p>
 <p>执行命令<code>su – oracle</code>切换到Oracle用户</p>
-<p><img src="H:\Blog\source\images\Oracle\QQ截图20190130140116.png" alt=""></p>
+<p><img src="images/Oracle/QQ截图20190130140116.png" alt=""></p>
 <p>注：#表示root用户拥有系统所有权限 $表示普通用户，权限由root用户授权</p>
 <p>至此输入：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlplus system/root</span><br></pre></td></tr></table></figure>
 <p>进入SQL界面，安装完成</p>
-<p><img src="H:\Blog\source\images\Oracle\QQ截图20190130140126.png" alt=""></p>
+<p><img src="images/Oracle/QQ截图20190130140126.png" alt=""></p>
 <p><em>上传文件用到 <a href="">FileZilla</a> ，连接CentOS7用到 <a href="">Xshell</a>，CentOS7安装用到 <a href="">vmware</a></em></p>
 
       
