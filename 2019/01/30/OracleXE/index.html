@@ -562,12 +562,31 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     <a href="http://www.conly.top/2019/01/30/OracleXE/" title="CentOS 7 Oracle XE版本静默安装教程">http://www.conly.top/2019/01/30/OracleXE/</a>
+	<span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.conly.top/2019/01/30/OracleXE/" aria-label="复制成功！"></i></span>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
     本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
   </li>
 </ul>
+<script src="http://cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>    
+<script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script> 
+<script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>   
+<script>     
+var clipboard = new Clipboard('.fa-clipboard');    
+clipboard.on('success', $(function(){ 
+     $(".fa-clipboard").click(function(){
+	 swal({
+	 title: "", 
+	 text: '复制成功',
+	 html: false, 
+	 timer: 3000, 
+	 showConfirmButton: true    
+			});     
+		});   
+	 }));  
+</script>
+
 
       </div>
     
