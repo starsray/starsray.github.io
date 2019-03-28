@@ -5,9 +5,9 @@
   <subtitle>Practices makes perfect !</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://www.conly.top/"/>
   <updated>2019-03-27T14:42:25.287Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://www.conly.top/</id>
   
   <author>
     <name>H-ONLY</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>DB2常用命令</title>
-    <link href="http://yoursite.com/2019/01/30/DB2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2019/01/30/DB2常用命令/</id>
+    <link href="http://www.conly.top/2019/01/30/DB2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://www.conly.top/2019/01/30/DB2常用命令/</id>
     <published>2019-01-30T07:24:31.000Z</published>
     <updated>2019-03-27T14:42:25.287Z</updated>
     
@@ -35,17 +35,17 @@
     
     </summary>
     
-      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="http://www.conly.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="DB2" scheme="http://yoursite.com/tags/DB2/"/>
+      <category term="DB2" scheme="http://www.conly.top/tags/DB2/"/>
     
   </entry>
   
   <entry>
     <title>CentOS 7 Oracle XE版本静默安装教程</title>
-    <link href="http://yoursite.com/2019/01/30/OracleXE/"/>
-    <id>http://yoursite.com/2019/01/30/OracleXE/</id>
+    <link href="http://www.conly.top/2019/01/30/OracleXE/"/>
+    <id>http://www.conly.top/2019/01/30/OracleXE/</id>
     <published>2019-01-30T02:55:49.000Z</published>
     <updated>2019-01-30T06:36:29.830Z</updated>
     
@@ -60,10 +60,10 @@
     
     </summary>
     
-      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="http://www.conly.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="Oracle" scheme="http://yoursite.com/tags/Oracle/"/>
+      <category term="Oracle" scheme="http://www.conly.top/tags/Oracle/"/>
     
   </entry>
   
