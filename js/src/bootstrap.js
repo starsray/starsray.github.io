@@ -50,6 +50,7 @@ $(document).ready(function () {
 
   $(document).trigger('bootstrap:after');
   
+  //修改头像背景颜色
   $(".site-author-image").mouseenter(function(){
 		$(".site-author-image").css("background-color","pink");
   });
