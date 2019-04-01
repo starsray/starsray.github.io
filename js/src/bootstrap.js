@@ -57,14 +57,13 @@ $(document).ready(function () {
   $(".site-author-image").mouseleave(function(){
 		$(".site-author-image").css("background-color","");
   });
-  //提示框
+  //TooltipS
   $('.site-author-image').tooltip({
         // 配置参数
 		text: '来啦 ^_^ 小哥哥 小姐姐~~',
-		shadowColor: 'pink',
+		shadowColor: '#BA55D3',
 		theme: 'light',
-		textColor: '#DB7093',
+		textColor: '#FF82AB',
 		fadeDuration: 300
-		
     });
 });
