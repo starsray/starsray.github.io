@@ -1778,6 +1778,7 @@ pre .javascript .function {
   transition: transform 1s ease-out;
 }
 img:hover {
+  cursor: pointer;
 /* 鼠标经过停止头像旋转 
   -webkit-animation-play-state:paused;
   animation-play-state:paused;*/
@@ -1805,6 +1806,20 @@ img:hover {
   100% {
     -moz-transform: rotateZ(-360deg);
   }
+}
+.demo {
+  background-color: #808080;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+.demo:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-top-color: #808080;
+  top: 100%;
+  left: 10px;
 }
 @-moz-keyframes play {
   0% {
@@ -1938,7 +1953,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e791ff;
+  background: #d58aff;
 }
 .links-of-blogroll {
   font-size: 13px;

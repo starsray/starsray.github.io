@@ -49,4 +49,11 @@ $(document).ready(function () {
   CONFIG.motion.enable && NexT.motion.integrator.bootstrap();
 
   $(document).trigger('bootstrap:after');
+  
+  $(".site-author-image").mouseenter(function(){
+		$(".site-author-image").css("background-color","pink");
+  });
+  $(".site-author-image").mouseleave(function(){
+		$(".site-author-image").css("background-color","");
+  });
 });
