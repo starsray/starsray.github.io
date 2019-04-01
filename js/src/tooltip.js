@@ -247,8 +247,9 @@ $(function($){
         var tipWidth = tipElement.width() + parseInt(tipElement.css('padding-left')) + parseInt(tipElement.css('padding-right'));
         var tipHeight = tipElement.height() + parseInt(tipElement.css('padding-top')) + parseInt(tipElement.css('padding-bottom'));;
         var leftPos = htmlElement.offset().left + htmlElement.width() / 2 - tipWidth / 2;
-        var topPos = htmlElement.offset().top + htmlElement.height() + parseInt(htmlElement.css('padding-top')) + parseInt(htmlElement.css('padding-bottom')) + 10;
-        var position = 'CENTER';
+//      var topPos = htmlElement.offset().top + htmlElement.height() + parseInt(htmlElement.css('padding-top')) + parseInt(htmlElement.css('padding-bottom')) + 10;
+        var topPos = htmlElement.offset().top - $(window).scrollTop() + htmlElement.height() + 15;
+	    var position = 'CENTER';
         var arrowPlacement = 'TOP';
 
         if (leftPos + tipWidth > $(window).width())
@@ -262,7 +263,7 @@ $(function($){
             position = 'LEFT';
         }
 
-        if (topPos + tipHeight >= $(window).height())
+       /* if (topPos + tipHeight >= $(window).height())
         {
             topPos = htmlElement.offset().top - tipHeight - 10;
             arrowPlacement = 'BOTTOM';
@@ -271,7 +272,7 @@ $(function($){
         {
             arrowPlacement = 'TOP';
         }
-
+		*/
         tipElement.css({
             top: topPos,
             left: leftPos,
